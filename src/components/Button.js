@@ -10,9 +10,9 @@ let colors = {
     'bg-pink-50 text-pink-600 hover:bg-pink-100 hover:text-pink-700 focus:ring-pink-600',
     'text-pink-300 group-hover:text-pink-400',
   ],
-  sky: [
-    'bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600',
-    'text-sky-300 group-hover:text-teal-400',
+  teal: [
+    'bg-teal-50 text-teal-600 hover:bg-teal-100 hover:text-teal-700 focus:ring-teal-600',
+    'text-teal-300 group-hover:text-teal-400',
   ],
   blue: [
     'bg-blue-50 text-blue-600 hover:bg-blue-100 hover:text-blue-700 focus:ring-blue-600',
@@ -29,9 +29,9 @@ let colorsDark = {
     'dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500',
     'dark:text-slate-500 dark:group-hover:text-slate-400',
   ],
-  sky: [
-    'dark:bg-teal-500 dark:text-sky-50 dark:hover:bg-teal-400 dark:hover:text-white dark:focus:ring-sky-200',
-    'dark:text-sky-300 dark:group-hover:text-sky-100',
+  teal: [
+    'dark:bg-teal-500 dark:text-teal-50 dark:hover:bg-teal-400 dark:hover:text-white dark:focus:ring-teal-200',
+    'dark:text-teal-300 dark:group-hover:text-teal-100',
   ],
 }
 

@@ -11,14 +11,14 @@ import { ThemeSelect, ThemeToggle } from './ThemeToggle'
 // function Featured() {
 //   return (
 //     <Link href="/blog/tailwindcss-v3-2">
-//       <a className="ml-3 text-xs leading-5 font-medium text-sky-600 dark:text-teal-400 bg-teal-400/10 rounded-full py-1 px-3 hidden xl:flex items-center hover:bg-teal-400/20">
+//       <a className="ml-3 text-xs leading-5 font-medium text-teal-600 dark:text-teal-400 bg-teal-400/10 rounded-full py-1 px-3 hidden xl:flex items-center hover:bg-teal-400/20">
 //         {/* <strong className="font-semibold">Tailwind CSS v3.2</strong> */}
 //         {/* <svg
 //           width="2"
 //           height="2"
 //           fill="currentColor"
 //           aria-hidden="true"
-//           className="ml-2 text-sky-600 dark:text-teal-400/70"
+//           className="ml-2 text-teal-600 dark:text-teal-400/70"
 //         >
 //           <circle cx="1" cy="1" r="1" />
 //         </svg> */}
@@ -31,7 +31,7 @@ import { ThemeSelect, ThemeToggle } from './ThemeToggle'
 //         {/* <svg
 //           width="3"
 //           height="6"
-//           className="ml-3 overflow-visible text-sky-300 dark:text-teal-400"
+//           className="ml-3 overflow-visible text-teal-300 dark:text-teal-400"
 //           aria-hidden="true"
 //         >
 //           <path
@@ -128,7 +128,7 @@ export function NavItems() {
   return (
     <>
       <li>
-        <Link href="/docs/installation">
+        <Link href="/docs/utility-first">
           <a className="hover:text-teal-500 dark:hover:text-teal-400">Components</a>
         </Link>
       </li>
@@ -149,7 +149,7 @@ export function NavItems() {
         <Link href="/showcase">
           <a className="hover:text-teal-500 dark:hover:text-teal-400">
             Showcase
-            <span className="ml-2 font-medium text-xs leading-5 rounded-full text-sky-600 bg-teal-400/10 px-2 py-0.5  dark:text-teal-400">
+            <span className="ml-2 font-medium text-xs leading-5 rounded-full text-teal-600 bg-teal-400/10 px-2 py-0.5  dark:text-teal-400">
               New
             </span>
           </a>

@@ -177,7 +177,7 @@ function Snippet({ code, highlightedCode }) {
 function TabBar({ name, children }) {
   return (
     <div className="relative flex text-slate-400 text-xs leading-6">
-      <div className="mt-2 flex-none text-sky-300 border-t border-b border-t-transparent border-b-sky-300 px-4 py-1 flex items-center">
+      <div className="mt-2 flex-none text-teal-300 border-t border-b border-t-transparent border-b-teal-300 px-4 py-1 flex items-center">
         {name}
       </div>
       <div className="flex-auto flex pt-2 rounded-tr-xl overflow-hidden">

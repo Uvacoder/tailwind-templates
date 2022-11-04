@@ -4,7 +4,7 @@ import { Logo } from '@/components/Logo'
 
 const footerNav = [
   {
-    'Getting Started': documentationNav['Getting Started'],
+    // 'Getting Started': documentationNav['Getting Started'],
     'Core Concepts': documentationNav['Core Concepts'],
   },
   {

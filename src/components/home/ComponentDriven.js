@@ -173,13 +173,13 @@ function ComponentExample({ framework }) {
                     type="button"
                     className={clsx(
                       'relative py-2 px-3',
-                      tabIndex === activeTab ? 'text-sky-300' : 'hover:text-slate-300'
+                      tabIndex === activeTab ? 'text-teal-300' : 'hover:text-slate-300'
                     )}
                     onClick={() => setActiveTab(tabIndex)}
                   >
                     {tab}
                     {tabIndex === activeTab && (
-                      <span className="absolute z-10 bottom-0 inset-x-3 h-px bg-sky-300" />
+                      <span className="absolute z-10 bottom-0 inset-x-3 h-px bg-teal-300" />
                     )}
                   </button>
                 </li>
@@ -266,7 +266,7 @@ function ComponentExample({ framework }) {
 function ApplyExample({ inView }) {
   return (
     <CodeWindow className="!h-auto !max-h-[none]" border={false}>
-      <h3 className="pl-4 flex text-sm leading-6 text-sky-300 border-b border-slate-500/30">
+      <h3 className="pl-4 flex text-sm leading-6 text-teal-300 border-b border-slate-500/30">
         <span className="-mb-px py-2 border-b border-b-current">styles.css</span>
       </h3>
       <div className="flex-none">
@@ -291,7 +291,7 @@ function ApplyExample({ inView }) {
           ))}
         </CodeWindow.Code2>
       </div>
-      <h3 className="pl-4 flex text-sm leading-6 text-sky-300 border-b border-slate-500/30">
+      <h3 className="pl-4 flex text-sm leading-6 text-teal-300 border-b border-slate-500/30">
         <span className="-mb-px py-2 border-b border-b-current">index.html</span>
       </h3>
       <div className="overflow-hidden">
@@ -336,7 +336,7 @@ function AtApplySection() {
           Use Tailwind's <InlineCode>@apply</InlineCode> directive to extract repeated utility
           patterns into custom CSS classes just by copying and pasting the list of class names.
         </Paragraph>
-        <Link href="/docs/reusing-styles" color="sky" darkColor="gray">
+        <Link href="/docs/reusing-styles" color="teal" darkColor="gray">
           Learn more<span className="sr-only">, reusing styles</span>
         </Link>
       </div>
@@ -566,7 +566,7 @@ export function ComponentDriven() {
           extract them into a component or template partial and boom — you've got a single source of
           truth so you can make changes in one place.
         </Paragraph>
-        <Link href="/docs/reusing-styles" color="sky" darkColor="gray">
+        <Link href="/docs/reusing-styles" color="teal" darkColor="gray">
           Learn more<span className="sr-only">, reusing styles</span>
         </Link>
         <div className="mt-10">

@@ -1,15 +1,15 @@
-import { Testimonials } from '@/components/Testimonials'
-import { DarkMode } from '@/components/home/DarkMode'
-import { ConstraintBased } from '@/components/home/ConstraintBased'
-import { BuildAnything } from '@/components/home/BuildAnything'
-import { Performance } from '@/components/home/Performance'
-import { MobileFirst } from '@/components/home/MobileFirst'
-import { StateVariants } from '@/components/home/StateVariants'
-import { ComponentDriven } from '@/components/home/ComponentDriven'
-import { Customization } from '@/components/home/Customization'
-import { ModernFeatures } from '@/components/home/ModernFeatures'
-import { EditorTools } from '@/components/home/EditorTools'
-import { ReadyMadeComponents } from '@/components/home/ReadyMadeComponents'
+// import { Testimonials } from '@/components/Testimonials'
+// import { DarkMode } from '@/components/home/DarkMode'
+// import { ConstraintBased } from '@/components/home/ConstraintBased'
+// import { BuildAnything } from '@/components/home/BuildAnything'
+// import { Performance } from '@/components/home/Performance'
+// import { MobileFirst } from '@/components/home/MobileFirst'
+// import { StateVariants } from '@/components/home/StateVariants'
+// import { ComponentDriven } from '@/components/home/ComponentDriven'
+// import { Customization } from '@/components/home/Customization'
+// import { ModernFeatures } from '@/components/home/ModernFeatures'
+// import { EditorTools } from '@/components/home/EditorTools'
+// import { ReadyMadeComponents } from '@/components/home/ReadyMadeComponents'
 import { SearchButton } from '@/components/Search'
 import { Hero } from '@/components/home/Hero'
 import { Logo } from '@/components/Logo'
@@ -87,28 +87,31 @@ function Header() {
         </div>
         <div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
           <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
-            Rapidly build modern websites without ever leaving your HTML.
+            Open Source handcrafted production ready Tailwind-css templates
           </h1>
           <p className="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">
-            A utility-first CSS framework packed with classes like{' '}
-            <code className="font-mono font-medium text-teal-500 dark:text-teal-400">flex</code>,{' '}
-            <code className="font-mono font-medium text-teal-500 dark:text-teal-400">pt-4</code>,{' '}
+            Using a utility-first CSS framework{' '}
             <code className="font-mono font-medium text-teal-500 dark:text-teal-400">
-              text-center
+              (Open Templates)
+            </code>{' '}
+            is packed with templates that are{' '}
+            <code className="font-mono font-medium text-teal-500 dark:text-teal-400">
+              handcrafted, responsive
             </code>{' '}
             and{' '}
             <code className="font-mono font-medium text-teal-500 dark:text-teal-400">
-              rotate-90
+              accessible
             </code>{' '}
-            that can be composed to build any design, directly in your markup.
+            which help your start{' '}
+            <code className="font-mono font-medium text-teal-500 dark:text-teal-400">quikly</code>.
           </p>
           <div className="mt-6 sm:mt-10 flex justify-center space-x-6 text-sm">
-            <NextLink href="/docs/installation">
+            <NextLink href="/docs/utility-first">
               <a className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-teal-500 dark:highlight-white/20 dark:hover:bg-teal-400">
-                Get started
+                Browse Components
               </a>
             </NextLink>
-            <SearchButton className="hidden sm:flex items-center w-72 text-left space-x-3 px-4 h-12 bg-white ring-1 ring-slate-900/10 hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 shadow-sm rounded-lg text-slate-400 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700">
+            <SearchButton className="hidden sm:flex items-center w-72 text-left space-x-3 px-4 h-12 bg-white ring-1 ring-slate-900/10 hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 shadow-sm rounded-lg text-slate-400 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700">
               {({ actionKey }) => (
                 <>
                   <svg
@@ -162,41 +165,49 @@ export default function Home() {
           property="og:title"
           content="Tailwind CSS - Rapidly build modern websites without ever leaving your HTML."
         />
-        <title>Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.</title>
+        <title>
+          Tailwind CSS Templates - Open Source handcrafted production ready Tailwind-css templates.
+        </title>
       </Head>
       <div className="mb-20 space-y-20 overflow-hidden sm:mb-32 sm:space-y-32 md:mb-40 md:space-y-40">
         <Header />
         <section className="text-center px-8">
           <h2 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white">
-            “Best practices” don’t actually work.
+            “Creatore of Open Templates”.
           </h2>
           <figure>
             <blockquote>
               <p className="mt-6 max-w-3xl mx-auto text-lg">
-                I’ve written{' '}
-                <a
-                  href="https://adamwathan.me/css-utility-classes-and-separation-of-concerns/"
-                  className="text-teal-500 font-semibold dark:text-teal-400"
-                >
-                  a few thousand words
-                </a>{' '}
-                on why traditional “semantic class names” are the reason CSS is hard to maintain,
-                but the truth is you’re never going to believe me until you actually try it. If you
-                can suppress the urge to retch long enough to give it a chance, I really think
-                you’ll wonder how you ever worked with CSS any other way.
+                Since I've been a front end developer for almost 4 years, I've always loved to
+                design stunning websites that{' '}
+                <code className="font-mono font-medium text-teal-500 dark:text-teal-400">
+                  wow visitors
+                </code>{' '}
+                . Working on{' '}
+                <code className="font-mono font-medium text-teal-500 dark:text-teal-400">
+                  enterprise-level projects
+                </code>{' '}
+                with one of the biggest tech companies exposed me to a variety of CSS frameworks,
+                and after learning so much, I felt compelled to create{' '}
+                <code className="font-mono font-medium text-teal-500 dark:text-teal-400">
+                  Open Templates
+                </code>{' '}
+                as a way of giving back to the open source community. A number of templates and
+                components with various variations for Tailwind, Chakra, Mui, as well as other CSS
+                frameworks, can be found in Open Templates.
               </p>
             </blockquote>
             <figcaption className="mt-6 flex items-center justify-center space-x-4 text-left">
               <img
-                src={require('@/img/adam.jpg').default.src}
+                src={require('@/img/humed.jpeg').default.src}
                 alt=""
                 className="w-14 h-14 rounded-full"
                 loading="lazy"
                 decoding="async"
               />
               <div>
-                <div className="text-slate-900 font-semibold dark:text-white">Adam Wathan</div>
-                <div className="mt-0.5 text-sm leading-6">Creator of Tailwind CSS</div>
+                <div className="text-slate-900 font-semibold dark:text-white">Humed Essie</div>
+                <div className="mt-0.5 text-sm leading-6">Creator of Open Templates</div>
               </div>
             </figcaption>
           </figure>

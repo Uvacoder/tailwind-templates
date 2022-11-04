@@ -92,7 +92,7 @@ function TableOfContents({ tableOfContents, currentSection }) {
           ))}
         </ul>
       </div>
-      <div className="mt-8 overflow-hidden">
+      {/* <div className="mt-8 overflow-hidden">
         <div className="p-8">
           <a
             href="https://www.refactoringui.com/?ref=sidebar"
@@ -122,7 +122,7 @@ function TableOfContents({ tableOfContents, currentSection }) {
             </div>
           </a>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

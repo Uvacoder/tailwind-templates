@@ -63,7 +63,7 @@ export default function Blog() {
                     Read more<span className="sr-only">, {meta.title}</span>
                   </span>
                   <svg
-                    className="relative mt-px overflow-visible ml-2.5 text-sky-300 dark:text-sky-700"
+                    className="relative mt-px overflow-visible ml-2.5 text-teal-300 dark:text-teal-700"
                     width="3"
                     height="6"
                     viewBox="0 0 3 6"

@@ -9,18 +9,18 @@ import { SnippetGroup } from '@/components/SnippetGroup'
 
 Every utility class in Tailwind can be applied _conditionally_ by adding a modifier to the beginning of the class name that describes the condition you want to target.
 
-For example, to apply the `bg-sky-700` class on hover, use the `hover:bg-sky-700` class:
+For example, to apply the `bg-teal-700` class on hover, use the `hover:bg-teal-700` class:
 
 <Example hint="Hover over this button to see the background color change">
   <div class="grid place-items-center">
-    <button class="bg-teal-500 hover:bg-sky-700 px-5 py-2 text-sm leading-5 rounded-full font-semibold text-white">
+    <button class="bg-teal-500 hover:bg-teal-700 px-5 py-2 text-sm leading-5 rounded-full font-semibold text-white">
       Save changes
     </button>
   </div>
 </Example>
 
 ```html
-<button class="bg-teal-500 **hover:bg-sky-700** ...">
+<button class="bg-teal-500 **hover:bg-teal-700** ...">
   Save changes
 </button>
 ```
@@ -49,12 +49,12 @@ In Tailwind, rather than adding the styles for a hover state to an existing clas
 .bg-teal-500 {
   background-color: #0ea5e9;
 }
-.hover\:bg-sky-700:hover {
+.hover\:bg-teal-700:hover {
   background-color: #0369a1;
 }
 ```
 
-Notice how `hover:bg-sky-700` _only_ defines styles for the `:hover` state? It does nothing by default, but as soon as you hover over an element with that class, the background color will change to `sky-700`.
+Notice how `hover:bg-teal-700` _only_ defines styles for the `:hover` state? It does nothing by default, but as soon as you hover over an element with that class, the background color will change to `teal-700`.
 
 This is what we mean when we say a utility class can be applied _conditionally_ — by using modifiers you can control exactly how your design behaves in different states, without ever leaving your HTML.
 
@@ -276,23 +276,23 @@ Style form elements in different states using modifiers like `required`, `invali
       <div>
         <label for="username" class="block text-sm font-medium text-slate-700">Username</label>
         <div class="mt-1">
-          <input type="text" name="username" id="username" class="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" value="tbone" disabled />
+          <input type="text" name="username" id="username" class="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-teal-500 focus:ring-teal-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" value="tbone" disabled />
         </div>
       </div>
       <div class="mt-6">
         <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
         <div class="mt-1">
-          <input type="email" name="email" id="email" class="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" value="george@krugerindustrial." placeholder="you@example.com" />
+          <input type="email" name="email" id="email" class="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-teal-500 focus:ring-teal-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" value="george@krugerindustrial." placeholder="you@example.com" />
         </div>
       </div>
       <div class="mt-6">
         <label for="password" class="block text-sm font-medium text-slate-700">Password</label>
         <div class="mt-1">
-          <input type="password" name="password" id="password" class="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" value="Bosco" />
+          <input type="password" name="password" id="password" class="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-teal-500 focus:ring-teal-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" value="Bosco" />
         </div>
       </div>
       <div class="mt-6 text-right">
-        <button class="bg-teal-500 hover:bg-sky-700 px-5 py-2.5 text-sm leading-5 rounded-md font-semibold text-white">
+        <button class="bg-teal-500 hover:bg-teal-700 px-5 py-2.5 text-sm leading-5 rounded-md font-semibold text-white">
           Save changes
         </button>
       </div>
@@ -306,7 +306,7 @@ Style form elements in different states using modifiers like `required`, `invali
     <span class="block text-sm font-medium text-slate-700">Username</span>
     <!-- Using form state modifers, the classes can be identical for every input -->
     <input type="text" value="tbone" disabled class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
-      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+      focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500
       **disabled:bg-slate-50** **disabled:text-slate-500** **disabled:border-slate-200** **disabled:shadow-none**
       **invalid:border-pink-500** **invalid:text-pink-600**
       **focus:invalid:border-pink-500** **focus:invalid:ring-pink-500**
@@ -327,9 +327,9 @@ See the [pseudo-class reference](#disabled) for a complete list of available pse
 When you need to style an element based on the state of some _parent_ element, mark the parent with the `group` class, and use `group-*` modifiers like `group-hover` to style the target element:
 
 <Example hint="Hover over the card to see both text elements change color">
-  <a href="#" class="group block max-w-xs mx-auto rounded-lg p-4 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-teal-500 hover:ring-sky-500">
+  <a href="#" class="group block max-w-xs mx-auto rounded-lg p-4 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-teal-500 hover:ring-teal-500">
     <div class="flex items-center space-x-3">
-      <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24">
+      <svg class="h-6 w-6 stroke-teal-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
           d="M11 19H6.931A1.922 1.922 0 015 17.087V8h12.069C18.135 8 19 8.857 19 9.913V11" />
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -342,9 +342,9 @@ When you need to style an element based on the state of some _parent_ element, m
 </Example>
 
 ```html
-<a href="#" class="**group** block max-w-xs mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-teal-500 hover:ring-sky-500">
+<a href="#" class="**group** block max-w-xs mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-teal-500 hover:ring-teal-500">
   <div class="flex items-center space-x-3">
-    <svg class="h-6 w-6 stroke-sky-500 **group-hover:stroke-white**" fill="none" viewBox="0 0 24 24"><!-- ... --></svg>
+    <svg class="h-6 w-6 stroke-teal-500 **group-hover:stroke-white**" fill="none" viewBox="0 0 24 24"><!-- ... --></svg>
     <h3 class="text-slate-900 **group-hover:text-white** text-sm font-semibold">New project</h3>
   </div>
   <p class="text-slate-500 **group-hover:text-white** text-sm">Create a new project from a variety of starting templates.</p>
@@ -489,7 +489,7 @@ When you need to style an element based on the state of a _sibling_ element, mar
       <div>
         <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
         <div class="mt-1">
-          <input type="email" name="email" id="email" class="peer px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" value="george@krugerindustrial." placeholder="you@example.com" />
+          <input type="email" name="email" id="email" class="peer px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 focus:outline-none focus:border-teal-500 focus:ring-teal-500 block w-full rounded-md sm:text-sm focus:ring-1 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:shadow-none" value="george@krugerindustrial." placeholder="you@example.com" />
           <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">Please provide a valid email address.</p>
         </div>
       </div>
@@ -533,7 +533,7 @@ When using multiple peers, you can style something on the state of a _specific_ 
   <div class="px-4">
     <fieldset class="mx-auto max-w-md bg-white p-8 text-sm shadow">
       <div class="mb-6 border-b border-slate-200 pb-2 text-base font-semibold">Published status</div>
-      <input id="draft" class="peer/draft form-radio mr-2 mb-0.5 border-slate-300 text-teal-400 focus:ring-sky-300" type="radio" name="status" checked /><label class="peer-checked/draft:text-teal-500 font-medium" for="draft">Draft</label> <input id="published" class="peer/published form-radio mr-2 mb-0.5 ml-4 border-slate-300 text-teal-400 focus:ring-sky-300" type="radio" name="status" /><label class="peer-checked/published:text-teal-500 font-medium" for="published">Published</label>
+      <input id="draft" class="peer/draft form-radio mr-2 mb-0.5 border-slate-300 text-teal-400 focus:ring-teal-300" type="radio" name="status" checked /><label class="peer-checked/draft:text-teal-500 font-medium" for="draft">Draft</label> <input id="published" class="peer/published form-radio mr-2 mb-0.5 ml-4 border-slate-300 text-teal-400 focus:ring-teal-300" type="radio" name="status" /><label class="peer-checked/published:text-teal-500 font-medium" for="published">Published</label>
       <div class="peer-checked/draft:block mt-4 hidden text-gray-500">Drafts are only visible to administrators.</div>
       <div class="peer-checked/published:block mt-4 hidden text-gray-500">Your post will be publicly visible on your site.</div>
     </fieldset>
@@ -614,7 +614,7 @@ Style the `::before` and `::after` pseudo-elements using the `before` and `after
     <form>
       <label class="block">
         <span class="block text-sm font-medium text-slate-700 after:content-['*'] after:ml-0.5 after:text-red-500">Email</span>
-        <input type="email" name="email" id="email" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+        <input type="email" name="email" id="email" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-teal-500 focus:ring-teal-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
       </label>
     </form>
   </div>
@@ -625,7 +625,7 @@ Style the `::before` and `::after` pseudo-elements using the `before` and `after
   <span class="**after:content-['*']** **after:ml-0.5** **after:text-red-500** block text-sm font-medium text-slate-700">
     Email
   </span>
-  <input type="email" name="email" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+  <input type="email" name="email" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-teal-500 focus:ring-teal-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
 </label>
 ```
 
@@ -697,7 +697,7 @@ Style the placeholder text of any input or textarea using the `placeholder` modi
           </svg>
         </span>
         <span class="sr-only">Search</span>
-        <input type="text" name="search" class="block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm placeholder:italic placeholder:text-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..."
+        <input type="text" name="search" class="block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm placeholder:italic placeholder:text-slate-400 focus:outline-none focus:border-teal-500 focus:ring-teal-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..."
         />
       </label>
     </form>
@@ -710,7 +710,7 @@ Style the placeholder text of any input or textarea using the `placeholder` modi
   <span class="absolute inset-y-0 left-0 flex items-center pl-2">
     <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
   </span>
-  <input class="**placeholder:italic** **placeholder:text-slate-400** block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+  <input class="**placeholder:italic** **placeholder:text-slate-400** block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-teal-500 focus:ring-teal-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
 </label>
 ```
 
@@ -1000,7 +1000,7 @@ Use the `contrast-more` modifier to conditionally add styles when the user has r
       <div>
         <label for="contrast-example" class="block text-sm font-medium text-slate-700">Social Security Number</label>
         <div class="mt-1">
-          <input type="text" name="contrast-example" id="contrast-example" class="px-3 py-2 bg-white border shadow-sm border-slate-200 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 contrast-more:border-slate-400 contrast-more:placeholder-slate-500"  placeholder="000-00-0000" />
+          <input type="text" name="contrast-example" id="contrast-example" class="px-3 py-2 bg-white border shadow-sm border-slate-200 placeholder-slate-400 focus:outline-none focus:border-teal-500 focus:ring-teal-500 block w-full rounded-md sm:text-sm focus:ring-1 contrast-more:border-slate-400 contrast-more:placeholder-slate-500"  placeholder="000-00-0000" />
           <p class="mt-2 text-sm text-slate-600 opacity-10 contrast-more:opacity-100">We need this to steal your identity.</p>
         </div>
       </div>
@@ -1105,10 +1105,10 @@ You can then use these custom `supports-*` modifiers in your project:
 
 Use the `aria-*` modifier to conditionally style things based on [ARIA attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes).
 
-For example, to apply the `bg-sky-700` class when the `aria-checked` attribute is set to `true`, use the `aria-checked:bg-sky-700` class:
+For example, to apply the `bg-teal-700` class when the `aria-checked` attribute is set to `true`, use the `aria-checked:bg-teal-700` class:
 
 ```html
-<div aria-checked="true" class="bg-gray-600 **aria-checked:bg-sky-700**">
+<div aria-checked="true" class="bg-gray-600 **aria-checked:bg-teal-700**">
   <!-- ... -->
 </div>
 ```
@@ -1928,7 +1928,7 @@ Style an input when it's required using the `required` modifier:
 Style an input when it's valid using the `valid` modifier:
 
 ```html
-<input class="**valid:border-green-500** ..." />
+<input class="**valid:border-teal-500** ..." />
 ```
 
 #### invalid <small>(:invalid)</small>
@@ -1944,7 +1944,7 @@ Style an input when it's invalid using the `invalid` modifier:
 Style an input when it's value is within a specified range limit using the `in-range` modifier:
 
 ```html
-<input min="1" max="5" class="**in-range:border-green-500** ..." />
+<input min="1" max="5" class="**in-range:border-teal-500** ..." />
 ```
 
 #### out-of-range <small>(:out-of-range)</small>

@@ -72,7 +72,7 @@ export function BlogPostLayout({ children, meta }) {
                         <div className="mt-1">
                           <a
                             href={`https://twitter.com/${author.twitter}`}
-                            className="text-teal-500 hover:text-sky-600 dark:text-teal-400"
+                            className="text-teal-500 hover:text-teal-600 dark:text-teal-400"
                           >
                             @{author.twitter}
                           </a>

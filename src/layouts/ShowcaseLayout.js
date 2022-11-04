@@ -266,7 +266,7 @@ export function ShowcaseLayout({ children, slug, meta }) {
             <Link href={meta.url}>
               <a
                 aria-label={`Visit ${meta.title}`}
-                className="relative flex-none text-sm text-center font-semibold text-white py-2.5 px-4 rounded-lg bg-slate-900 dark:bg-teal-500 dark:text-white focus:outline-none hover:bg-slate-700 focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:highlight-white/20 dark:hover:bg-teal-400 dark:focus:ring-2 dark:focus:ring-sky-600 dark:focus:ring-offset-slate-900"
+                className="relative flex-none text-sm text-center font-semibold text-white py-2.5 px-4 rounded-lg bg-slate-900 dark:bg-teal-500 dark:text-white focus:outline-none hover:bg-slate-700 focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:highlight-white/20 dark:hover:bg-teal-400 dark:focus:ring-2 dark:focus:ring-teal-600 dark:focus:ring-offset-slate-900"
               >
                 Go to website <span aria-hidden="true">&rarr;</span>
               </a>

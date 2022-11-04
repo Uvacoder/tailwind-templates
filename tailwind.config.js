@@ -110,7 +110,7 @@ module.exports = {
             a: {
               fontWeight: theme('fontWeight.semibold'),
               textDecoration: 'none',
-              borderBottom: `1px solid ${theme('colors.sky.300')}`,
+              borderBottom: `1px solid ${theme('colors.teal.300')}`,
             },
             'a:hover': {
               borderBottomWidth: '2px',
@@ -218,7 +218,7 @@ module.exports = {
             },
             a: {
               color: theme('colors.white'),
-              borderBottomColor: theme('colors.sky.400'),
+              borderBottomColor: theme('colors.teal.400'),
             },
             strong: {
               color: theme('colors.slate.200'),

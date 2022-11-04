@@ -208,11 +208,11 @@ In v2.0, several of the default colors were actually aliases for the extended co
 
 | v2 Default | v2 Extended |
 | --- | --- |
-| `green` | `emerald` |
+| `teal` | `emerald` |
 | `yellow` | `amber` |
 | `purple` | `violet` |
 
-In v3.0, these colors use their extended names by default, so what was previously `bg-green-500` is now `bg-emerald-500`, and `bg-green-500` now refers to the green from the extended palette.
+In v3.0, these colors use their extended names by default, so what was previously `bg-teal-500` is now `bg-emerald-500`, and `bg-teal-500` now refers to the teal from the extended palette.
 
 If you're using these colors in your project, the simplest way to upgrade is to alias them back to their previous names in your `tailwind.config.js` file:
 
@@ -223,7 +223,7 @@ If you're using these colors in your project, the simplest way to upgrade is to 
     theme: {
       extend: {
 +       colors: {
-+         green: colors.emerald,
++         teal: colors.emerald,
 +         yellow: colors.amber,
 +         purple: colors.violet,
 +       }

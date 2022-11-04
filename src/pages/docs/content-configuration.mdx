@@ -205,17 +205,17 @@ If you use string interpolation or concatenate partial class names together, Tai
 <TipBad>Don't construct class names dynamically</TipBad>
 
 ```html
-<div class="text-{{ error ? 'red' : 'green' }}-600"></div>
+<div class="text-{{ error ? 'red' : 'teal' }}-600"></div>
 ```
 
-In the example above, the strings `text-red-600` and `text-green-600` do not exist, so Tailwind will not generate those classes.
+In the example above, the strings `text-red-600` and `text-teal-600` do not exist, so Tailwind will not generate those classes.
 
 Instead, make sure any class names you're using exist in full:
 
 <TipGood>Always use complete class names</TipGood>
 
 ```html
-<div class="{{ error ? 'text-red-600' : 'text-green-600' }}"></div>
+<div class="{{ error ? 'text-red-600' : 'text-teal-600' }}"></div>
 ```
 
 As long as you always use complete class names in your code, Tailwind will generate all of your CSS perfectly every time.
@@ -354,7 +354,7 @@ module.exports = {
     'text-2xl',
     'text-3xl',
     {
-      pattern: /bg-(red|green|blue)-(100|200|300)/,
+      pattern: /bg-(red|teal|blue)-(100|200|300)/,
     },
   ],
   // ...
@@ -375,7 +375,7 @@ module.exports = {
     'text-2xl',
     'text-3xl',
     {
-      pattern: /bg-(red|green|blue)-(100|200|300)/,
+      pattern: /bg-(red|teal|blue)-(100|200|300)/,
       variants: ['lg', 'hover', 'focus', 'lg:hover'],
     },
   ],
@@ -471,7 +471,7 @@ It could also be that you are trying to use dynamic class names, which won't wor
 <TipBad>Don't construct class names dynamically</TipBad>
 
 ```html
-<div class="text-{{ error ? 'red' : 'green' }}-600"></div>
+<div class="text-{{ error ? 'red' : 'teal' }}-600"></div>
 ```
 
 Make sure you always use complete class names in your code:
@@ -479,7 +479,7 @@ Make sure you always use complete class names in your code:
 <TipGood>Always use complete class names</TipGood>
 
 ```html
-<div class="{{ error ? 'text-red-600' : 'text-green-600' }}"></div>
+<div class="{{ error ? 'text-red-600' : 'text-teal-600' }}"></div>
 ```
 
 Read our documentation on [dynamic class names](#dynamic-class-names) for more details.

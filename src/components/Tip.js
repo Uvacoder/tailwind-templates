@@ -1,7 +1,7 @@
 export function TipGood({ children }) {
   return (
     <div className="flex items-start my-6 space-x-4">
-      <div className="relative mt-1 w-4 h-4 rounded-full bg-cyan-500 text-white flex items-center justify-center ring-2 ring-cyan-500 dark:bg-teal-500 dark:ring-sky-500">
+      <div className="relative mt-1 w-4 h-4 rounded-full bg-cyan-500 text-white flex items-center justify-center ring-2 ring-cyan-500 dark:bg-teal-500 dark:ring-teal-500">
         <svg width="6" height="4.5" className="overflow-visible" aria-hidden="true">
           <path
             d="M6 0L2 4.5L0 2.5"
@@ -46,7 +46,7 @@ export function TipBad({ children }) {
 
 export function TipCompat({ children }) {
   return (
-    <div className="text-sm bg-sky-100 text-sky-800 font-medium px-4 py-3 mb-4 rounded-xl">
+    <div className="text-sm bg-teal-100 text-teal-800 font-medium px-4 py-3 mb-4 rounded-xl">
       <div className="flex items-start space-x-3">
         <svg width="20" height="20" className="text-teal-500" fill="currentColor">
           <path

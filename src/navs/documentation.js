@@ -6,21 +6,21 @@ const pages = createPageList(
 )
 
 export const documentationNav = {
-  'Getting Started': [
-    {
-      title: 'Installation',
-      href: '/docs/installation',
-      match: /^\/docs\/(installation|guides)/,
-    },
-    // TODO: Add these pages
-    // pages['tailwind-cli'],
-    // { title: 'Play CDN', href: '#' },
-    pages['editor-setup'],
-    pages['using-with-preprocessors'],
-    pages['optimizing-for-production'],
-    pages['browser-support'],
-    pages['upgrade-guide'],
-  ],
+  // 'Getting Started': [
+  //   {
+  //     title: 'Installation',
+  //     href: '/docs/installation',
+  //     match: /^\/docs\/(installation|guides)/,
+  //   },
+  //   // TODO: Add these pages
+  //   // pages['tailwind-cli'],
+  //   // { title: 'Play CDN', href: '#' },
+  //   pages['editor-setup'],
+  //   pages['using-with-preprocessors'],
+  //   pages['optimizing-for-production'],
+  //   pages['browser-support'],
+  //   pages['upgrade-guide'],
+  // ],
   'Core Concepts': [
     pages['utility-first'],
     // TODO: Maybe write this page
